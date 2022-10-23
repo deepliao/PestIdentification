@@ -10,10 +10,10 @@ const Bar=(props) =>{
     return (
         <View>
             <StatusBar hidden = {false} backgroundColor = {'#98c379'}/>
-            <Text>{props.name}</Text>
         </View>
     )
-}   
+} 
+// 后续改进 10.22
 const ActionState=(props)=>{
     return (
         <View style = {[navigatorStyles, {height : 28}]} >
