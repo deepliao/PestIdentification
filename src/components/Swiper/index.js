@@ -5,11 +5,11 @@ const { width } = Dimensions.get('window')
 
 const styles = {
   container: {
-    flex: 1,
+    height: 200,
   },
 
   wrapper: {
-    top: 150,
+
   },
 
   slide: {
@@ -18,8 +18,8 @@ const styles = {
   },
 
   image: {
-    width,
-    top: 10,
+    width:"100%",
+    height:"100%",
   },
 
 }
@@ -36,9 +36,6 @@ class Swipper extends Component {
           showsButtons={true}
           autoplayTimeout={2.5}
           style={styles.wrapper}
-          // onMomentumScrollEnd={(e, state, context) =>
-          //   console.log('index:', state.index)
-          // }
         >
 
           <Image
