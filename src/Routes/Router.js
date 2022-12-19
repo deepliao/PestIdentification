@@ -5,6 +5,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import HomeSceen from '../pages/HomeScreen'
 import MapScreen from '../pages/MapScreen'
 import NewsScreen from '../pages/NewsScreen'
+import PhotoScreen from '../pages/PhotoScreen'
 import QueryScreen from '../pages/QueryScreen'
 import {labelStyles} from '../styles/LabelStyle'
 
@@ -44,6 +45,18 @@ const Router = () => {
                 ),
                 }}
             />
+
+            <Tab.Screen name="PhotoScreen" component={PhotoScreen}
+                options={{ tabBarLabel: '识别',
+                tabBarIcon:({ color }) => (
+                    <Image
+                        source={require('../resources/labelIcon/remoteControl.png')}
+                        style={[labelStyles.icon, {tintColor:color}]}
+                    />
+                ),
+                }}
+            />
+
             <Tab.Screen name="NewsScreen" component={NewsScreen}
                 options={{ tabBarLabel: '农讯',
                 tabBarIcon:({ color }) => (
